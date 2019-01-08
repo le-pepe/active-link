@@ -13,7 +13,6 @@
   ],
   "license": "MIT",
   "homepage": "",
-  "private": true,
   "dependencies": {
     "angular": "angularjs#^1.7.5",
     "jquery": "^3.3.1"
