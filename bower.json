@@ -1,0 +1,21 @@
+{
+  "name": "ActiveLink",
+  "version": "0.0.1",
+  "authors": [
+    "José González <gonzalezmunozjosearmando@gmail.com>"
+  ],
+  "description": "Add active class for menu elements based on bootstrap",
+  "main": "active-link.js",
+  "keywords": [
+    "active",
+    "link",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular": "angularjs#^1.7.5",
+    "jquery": "^3.3.1"
+  }
+}
