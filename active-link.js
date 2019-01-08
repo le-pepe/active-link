@@ -10,7 +10,17 @@ angular.module('active-link', [])
             link: function (scope, element, attrs) {
                 scope.location = $location;
                 scope.$watch('location.path()', function (locationPath) {
-                    (scope.activeLink === locationPath) ? element.addClass("active") : element.removeClass("active");
+                    if (scope.activeLink === locationPath) {
+                        element.addClass("active");
+                        if (parent.length > 0) {
+                            $(parent[0]).addClass('active')
+                        }
+                    } else {
+                        element.removeClass("active");
+                        if (parent.length > 0) {
+                            $(parent[0]).removeClass('active')
+                        }
+                    }
                 });
             }
         }
